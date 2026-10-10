@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <link rel="icon" type="image/jpeg" href="/learn5/favicon.jpg" />
+  <link rel="alternate icon" type="image/jpeg" href="./favicon.jpg" />
+  <link rel="apple-touch-icon" href="/learn5/logo.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="Tp_jqenOU67d9NNQD16yP9-drnJ4A-Di8e-G2F6MIsM" />
+  <title>學得快 | 國高中108課綱全科題庫・國中會考・高中學測複習・各單元重點筆記</title>
+  <meta name="description"
+    content="學得快 (高效學習・快速領先) 專為國高中108課綱量身打造之全科免費線上題庫，支援國中會考與高中學測複習。涵蓋國文、英語、數學、自然、社會全科目破萬題題庫，附即時解析、智慧錯題強化、單元重點筆記與全台學生每週排行榜。" />
+  <!-- 防止舊版強快取，支援 ETag / 304 快速重驗 -->
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <script>
+    // 進入首頁即刻重置重定向保護標記，並撫平 Cache-Buster 參數
+    try {
+      sessionStorage.removeItem('__sh_last_redirect__');
+      sessionStorage.removeItem('__sh_redirect_count__');
+      if (window.location.search && (window.location.search.includes('clean=') || window.location.search.includes('v='))) {
+        var cleanSearch = window.location.search.replace(/[?&](clean|v)=\d+/, '').replace(/^&/, '?');
+        var cleanUrl = window.location.pathname + (cleanSearch ? cleanSearch : '') + window.location.hash;
+        window.history.replaceState(null, '', cleanUrl);
+      }
+    } catch (_) {}
+  </script>
+  <!-- ══════ Security Headers (防火牆) ══════ -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' 'unsafe-eval'
+      https://apis.google.com
+      https://accounts.google.com
+      https://cdn.jsdelivr.net
+      https://www.googletagmanager.com
+      https://static.line-scdn.net
+      https://*.line-scdn.net
+      https://*.firebasedatabase.app;
+    style-src 'self' 'unsafe-inline'
+      https://fonts.googleapis.com
+      https://cdn.jsdelivr.net;
+    font-src 'self' data:
+      https://fonts.gstatic.com
+      https://cdn.jsdelivr.net;
+    img-src 'self' data: blob:
+      https://api.dicebear.com
+      https://lh3.googleusercontent.com
+      https://www.google.com
+      https://*.line-scdn.net
+      https://profile.line-scdn.net
+      https://obs.line-scdn.net
+      https://*.github.io;
+    connect-src 'self'
+      ws:
+      wss:
+      http://localhost:*
+      http://127.0.0.1:*
+      https://*.firebaseio.com
+      https://*.firebasedatabase.app
+      wss://*.firebasedatabase.app
+      https://*.googleapis.com
+      https://identitytoolkit.googleapis.com
+      https://securetoken.googleapis.com
+      https://fonts.googleapis.com
+      https://fonts.gstatic.com
+      https://api.github.com
+      https://*.line.me
+      https://api.line.me
+      https://access.line.me
+      https://*.line-scdn.net
+      https://static.line-scdn.net
+      https://liffsdk.line-scdn.net
+      https://*.line.biz
+      https://*.line-apps.com
+      https://goodlearn5.github.io
+      https://jimmylee1020227-bot.github.io;
+    frame-src
+      https://accounts.google.com
+      https://access.line.me
+      https://*.line.me
+      https://*.line.biz
+      https://*.line-apps.com
+      https://*.firebasedatabase.app
+      https://*.firebaseio.com;
+    object-src 'none';
+    base-uri 'self';
+    form-action 'self' https://accounts.google.com https://access.line.me;
+    upgrade-insecure-requests;
+  " />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()" />
+  <!-- LINE 官方純前端 LIFF SDK -->
+  <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+
+  <!-- ══════ 搜尋引擎爬蟲極速索引專屬指令 (Googlebot / Bingbot / Robots) ══════ -->
+  <link rel="canonical" href="https://goodlearn5.github.io/learn5/" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="revisit-after" content="1 days" />
+  <meta name="rating" content="general" />
+  <meta name="coverage" content="Worldwide" />
+  <meta name="distribution" content="Global" />
+  <meta name="keywords" content="學得快, 題庫, 國中題庫, 高中題庫, 國中會考, 高中學測, 108課綱, 會考題庫, 學測題庫, 國中數學題庫, 高中數學題庫, 國文題庫, 英文題庫, 自然題庫, 理化題庫, 社會題庫, 錯題本, 學習筆記, 線上測驗, GoodLearn, goodlearn5" />
+  <meta name="author" content="學得快 團隊" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://goodlearn5.github.io/learn5/" />
+  <meta property="og:title" content="學得快 | 國高中108課綱全科題庫・會考學測複習與智慧錯題系統" />
+  <meta property="og:description" content="專為國高中108課綱設計的全科測驗複習「學得快」。高效學習・快速領先。國一至高三國英數自社全科目，支援國中會考與高中學測，即時解析、每週排行榜與智慧錯題強化。" />
+  <meta property="og:image" content="https://goodlearn5.github.io/learn5/logo.jpg" />
+  <meta property="og:site_name" content="學得快" />
+  <meta property="og:locale" content="zh_TW" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="學得快 | 國高中108課綱全科題庫・會考學測複習系統" />
+  <meta name="twitter:description" content="學得快 國高中108課綱國英數自社全科題庫，全方位支援國中會考、高中學測模擬與錯題複習。" />
+  <meta name="twitter:image" content="https://goodlearn5.github.io/learn5/logo.jpg" />
+
+  <!-- ══════ Schema.org 豐富結構化資料 (加速 Google Rich Snippets 與極速收錄) ══════ -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "學得快",
+      "alternateName": ["學得快", "學得快題庫網", "GoodLearn", "GoodLearn 學得快", "goodlearn5"],
+      "url": "https://goodlearn5.github.io/learn5/",
+      "inLanguage": "zh-Hant-TW",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://goodlearn5.github.io/learn5/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "學得快 線上教育研究團隊",
+      "url": "https://goodlearn5.github.io/learn5/",
+      "logo": "https://goodlearn5.github.io/learn5/logo.jpg",
+      "description": "專注於 108 課綱國中會考與高中學測的全科線上題庫與自主學習平台。",
+      "sameAs": [
+        "https://goodlearn5.github.io/learn5/"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "學得快 - 108課綱國高中全科題庫與會考學測複習系統",
+      "url": "https://goodlearn5.github.io/learn5/",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "TWD"
+      },
+      "description": "學得快專為國高中108課綱設計之全科線上題庫與會考、學測診斷系統，高效學習・快速領先。提供國一至高三國文、英語、數學、自然、社會全科題目、錯題本、單元重點筆記與全台排行榜。",
+      "inLanguage": "zh-Hant-TW"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "學得快線上題庫涵蓋哪些年級與科目？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "學得快全面涵蓋 108 課綱國中（國一、國二、國三會考）與高中（高一、高二、高三學測與分科測驗）的國文、英語、數學、自然（理化/生物/地科）、社會（歷史/地理/公民）五大核心學科，共收錄超過數百個單元之素養導向題庫。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "學得快是否有收錄國中會考與高中學測歷屆模擬題？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "有的。平台設有國中會考模考專區與高中學測模擬題庫，支援大考計時測驗、會考五科等級推估（A++ 至 C）、即時詳解與智慧錯題本強化功能。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "使用學得快需要付費嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "學得快為非營利教育公益網站，所有單元題目練習、歷屆模擬考、錯題加強本、各單元精華筆記與全台每週榮譽排行榜完全 100% 免費開放，無任何隱藏收費與商業廣告。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "智慧錯題本如何幫助學生提升學習成績？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "作答過程中答錯的題目會自動分類歸納至學生的個人錯題本，系統依據單元弱點與觀念標籤提供專項強化抽題，直到學員完全搞懂正確解題邏輯後自動移出，達到零死角弱點修復。"
+          }
+        }
+      ]
+    }
+  ]
+  </script>
+
+  <!-- DNS 預熱：提前建立 Firebase 連線，減少第一次 API 請求延遲 -->
+  <link rel="dns-prefetch" href="https://learn-9e08c-default-rtdb.asia-southeast1.firebasedatabase.app">
+  <link rel="dns-prefetch" href="https://firebasedatabase.app">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@500&display=swap"></noscript>
+  <style>@keyframes xdkPulse{0%,to{opacity:1;transform:scale(1)}50%{opacity:.92;transform:scale(1.05)}}@keyframes xdkShimmer{0%{transform:translate(-100%)}to{transform:translate(200%)}}.seo-semantic-container{text-align:left;color:#17324d;background:#fff;border:2px solid #17324d;border-radius:20px;max-width:960px;margin:40px auto;padding:24px;font-family:-apple-system,BlinkMacSystemFont,PingFang TC,Microsoft JhengHei,sans-serif;line-height:1.7;box-shadow:4px 4px #17324d}.seo-grid{grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:20px 0;display:grid}.seo-card{background:#fdfaf6;border:1.5px solid #ded3c5;border-radius:14px;padding:16px}</style>
+  <script type="module" crossorigin src="./assets/index-VlL-Ea_N.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-B1BYoKol.css">
+</head>
+
+<body>
+  <!-- ══════ 靜態預渲染容器 (供 Googlebot / Bingbot 爬蟲秒級建立完整關鍵字索引，React 掛載時無縫置換) ══════ -->
+  <div id="root">
+    <!-- 人類瀏覽者載入視覺指示器 -->
+    <div style="min-height:50vh;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#f8f3eb;font-family:-apple-system,BlinkMacSystemFont,'PingFang TC','Microsoft JhengHei','Noto Sans TC',sans-serif;padding:32px 16px;text-align:center;">
+      <div style="width:96px;height:96px;border-radius:50%;overflow:hidden;box-shadow:0 8px 24px rgba(23,50,77,0.18);border:3px solid #17324d;margin-bottom:16px;background:#fff;display:flex;align-items:center;justify-content:center;animation:xdkPulse 2s infinite ease-in-out;">
+        <img src="/learn5/logo.jpg" onerror="this.src='./logo.jpg'" alt="學得快" style="width:100%;height:100%;object-fit:cover;" />
+      </div>
+      <div style="font-weight:900;color:#17324d;font-size:1.6rem;letter-spacing:0.04em;">學得快</div>
+      <div style="color:#78818a;font-size:0.95rem;margin-top:6px;font-weight:700;">高效學習・快速領先 | 108 課綱國高中全科線上題庫與會考學測複習</div>
+      <div style="margin-top:20px;width:140px;height:5px;background:#e2d9cd;border-radius:4px;overflow:hidden;position:relative;">
+        <div style="position:absolute;top:0;left:0;width:50%;height:100%;background:#ef8354;border-radius:4px;animation:xdkShimmer 1.2s infinite ease-in-out;"></div>
+      </div>
+      <p style="margin-top:14px;font-size:0.84rem;color:#a0aec0;font-weight:600;">正在啟動即時測驗系統與單元題庫...</p>
+    </div>
+
+    <!-- 靜態高權重語意 HTML (Googlebot 爬蟲 10 分鐘秒收錄核心架構) -->
+    <main class="seo-semantic-container">
+      <header>
+        <h1 style="font-size: 1.75rem; font-weight: 900; margin-bottom: 8px; color: #17324d;">
+          學得快 | 國高中 108 課綱全科題庫・國中會考與高中學測複習系統
+        </h1>
+        <p style="font-size: 1rem; color: #5b6772; font-weight: 600;">
+          專為全國國中、高中學子量身打造之全方位線上自主練習題庫。高效學習・快速領先。涵蓋國文、英語、數學、自然、社會全科目，包含即時詳解、智慧錯題強化、單元重點筆記與每週全台排行榜。
+        </p>
+      </header>
+
+      <section style="margin-top: 24px;">
+        <h2 style="font-size: 1.3rem; font-weight: 800; border-left: 5px solid #ef8354; padding-left: 10px; margin-bottom: 12px;">
+          五大學科 108 課綱完整題庫矩陣
+        </h2>
+        <div class="seo-grid">
+          <article class="seo-card">
+            <h3 style="font-size: 1.1rem; font-weight: 800; color: #b45309; margin-top: 0;">📖 國文學科題庫</h3>
+            <p style="font-size: 0.88rem; color: #4b5563;">
+              涵蓋國中與高中 108 課綱推薦選文、白話文閱讀素養、文言文斷句翻譯、成語詞成、修辭辨析及國中會考、學測國綜歷屆核心考點。
+            </p>
+          </article>
+          <article class="seo-card">
+            <h3 style="font-size: 1.1rem; font-weight: 800; color: #0284c7; margin-top: 0;">🎧 英語學科題庫</h3>
+            <p style="font-size: 0.88rem; color: #4b5563;">
+              教育部 1200 / 4500 / 7000 核心字彙、克漏字篇章結構、閱讀測驗、非連續性資訊圖表判讀與會考英聽實戰模擬。
+            </p>
+          </article>
+          <article class="seo-card">
+            <h3 style="font-size: 1.1rem; font-weight: 800; color: #15803d; margin-top: 0;">📐 數學學科題庫</h3>
+            <p style="font-size: 0.88rem; color: #4b5563;">
+              包含數與式、多項式函數、直線與圓、平面向量、三角比、空間幾何、機率統計、雙畢氏高線分割與素養生活情境素養題。
+            </p>
+          </article>
+          <article class="seo-card">
+            <h3 style="font-size: 1.1rem; font-weight: 800; color: #7c3aed; margin-top: 0;">🔬 自然科學題庫</h3>
+            <p style="font-size: 0.88rem; color: #4b5563;">
+              整合物理力學與電磁、化學反應與分子平衡、生物遺傳與演化、地球科學大氣天體與探究實作實驗題型。
+            </p>
+          </article>
+          <article class="seo-card">
+            <h3 style="font-size: 1.1rem; font-weight: 800; color: #c2410c; margin-top: 0;">🌏 社會領域題庫</h3>
+            <p style="font-size: 0.88rem; color: #4b5563;">
+              跨整歷史變遷與史料判讀、地理空間與地形圖分析、公民民主法治與市場經濟，完整掌握會考學測跨科整合趨勢。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section style="margin-top: 24px;">
+        <h2 style="font-size: 1.3rem; font-weight: 800; border-left: 5px solid #ef8354; padding-left: 10px; margin-bottom: 12px;">
+          學得快核心功能亮點
+        </h2>
+        <ul style="font-size: 0.92rem; color: #374151; line-height: 1.9; padding-left: 20px;">
+          <li><strong>嚴格 108 課綱題型模板</strong>：各年級各單元超過 100+ 道精選題目模板，動態變換數值與條件，徹底杜絕重複題目。</li>
+          <li><strong>即時專業解題剖析</strong>：每道試題均附完整破題步驟與觀念提示，作答完畢立刻理解盲點所在。</li>
+          <li><strong>個人化智慧錯題本</strong>：錯題自動按單元概念歸檔，支援自適應弱點針對性複習，答懂為止。</li>
+          <li><strong>各單元重點筆記整理</strong>：單元觀念重點速記、精選範例與公式推導，考前快速複習最佳利器。</li>
+          <li><strong>每週全台榮譽排行榜</strong>：即時競技排名，累積答題點數與連續登入獎勵，激發自主學習動機。</li>
+        </ul>
+      </section>
+
+      <section style="margin-top: 24px;">
+        <h2 style="font-size: 1.3rem; font-weight: 800; border-left: 5px solid #ef8354; padding-left: 10px; margin-bottom: 12px;">
+          常見問題 FAQ
+        </h2>
+        <div style="font-size: 0.9rem; color: #374151;">
+          <h3 style="font-size: 1rem; font-weight: 800; margin-bottom: 4px;">Q1: 題庫內容是否符合最新教育部 108 課綱？</h3>
+          <p style="margin-top: 0; color: #4b5563;">完全符合。題目均嚴格按 108 課綱之核心素養及能力指標設計，剔除超綱內容並加強非連續文本與探究實作素養題。</p>
+
+          <h3 style="font-size: 1rem; font-weight: 800; margin-bottom: 4px;">Q2: 是否需要付費才能使用完整題庫？</h3>
+          <p style="margin-top: 0; color: #4b5563;">學得快為 100% 免費公益教育平台，全科題庫刷題、模擬考、錯題本、重點筆記全數永久免費向全國學生開放。</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <noscript>
+    <div style="max-width:800px;margin:40px auto;padding:24px;background:#fff;border:2px solid #17324d;border-radius:16px;font-family:sans-serif;color:#17324d;">
+      <h1>學得快 - 國高中 108 課綱全科線上題庫與會考學測複習系統</h1>
+      <p>專為國中與高中學生打造的自主學習線上測驗平台「學得快」。高效學習・快速領先。涵蓋 108 課綱國文、英語、數學、自然、社會全科目。</p>
+      <p>請啟用瀏覽器的 JavaScript 以正常使用完整測驗題庫、錯題本與重點筆記。</p>
+    </div>
+  </noscript>
+
+
+  <!-- 🛡️ 全局白屏監控救生圈：若 React 因極端網絡延遲未能渲染，提供就地刷新按鈕，絕不進行錯誤的子路徑重定向 -->
+  <script>
+    setTimeout(function () {
+      var root = document.getElementById('root');
+      if (root && (!root.innerHTML || root.children.length === 0)) {
+        root.innerHTML = '<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f8f3eb;padding:20px;font-family:sans-serif;">' +
+          '<div style="max-width:420px;width:100%;background:#fffdf9;border:3px solid #17324d;border-radius:20px;box-shadow:6px 6px 0 #17324d;padding:28px;text-align:center;">' +
+          '<div style="font-size:2.5rem;margin-bottom:12px;">🌱</div>' +
+          '<h2 style="color:#17324d;font-weight:900;margin-bottom:8px;">頁面載入逾時</h2>' +
+          '<p style="color:#5b6772;font-size:0.9rem;margin-bottom:20px;line-height:1.6;">網路連線可能較慢，請點擊下方按鈕重新整理：</p>' +
+          '<button onclick="window.location.reload(true)" style="background:#ef8354;color:#fff;border:2px solid #17324d;border-radius:12px;padding:10px 24px;font-weight:800;font-size:0.95rem;cursor:pointer;box-shadow:3px 3px 0 #17324d;">🔄 重新整理頁面</button>' +
+          '</div></div>';
+      }
+    }, 10000);
+  </script>
+</body>
+
+</html>
