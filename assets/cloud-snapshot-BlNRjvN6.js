@@ -1,0 +1,1 @@
+import{n as _0x31c509}from'./rolldown-runtime-hePW80VL.js';var t=_0x31c509({'INITIAL_QUIZ_PAPERS':()=>r,'INITIAL_USER_REGISTRY':()=>n}),n={},r=[];export{t};

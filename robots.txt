@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+Sitemap: https://goodlearn5.github.io/learn5/sitemap.xml

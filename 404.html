@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/jpeg" href="/learn5/logo.jpg" />
+  <title>正在前往 108課綱國高中全科複習學得快...</title>
+  <script>
+    // GitHub Pages SPA 智能自愈與防循環重定向護盾
+    (function () {
+      var path = window.location.pathname;
+      var base = path.startsWith('/learn5') ? '/learn5/' : '/';
+      
+      // 1. 防死循環守衛 (Loop Guard)
+      var now = Date.now();
+      var lastRedirect = parseInt(sessionStorage.getItem('__sh_last_redirect__') || '0', 10);
+      var redirectCount = parseInt(sessionStorage.getItem('__sh_redirect_count__') || '0', 10);
+
+      // 如果 6 秒內已經連續重定向超過 1 次，堅決停止自動跳轉，原地破除循環
+      if (now - lastRedirect < 6000 && redirectCount >= 1) {
+        console.warn('[404 Guard] 偵測到瀏覽器快取重定向循環，已啟動緊急熔斷阻斷。');
+        sessionStorage.removeItem('__sh_last_redirect__');
+        sessionStorage.removeItem('__sh_redirect_count__');
+        
+        // 自動嘗試清除本機所有可能衝突的 Cache Storage 與 Service Worker
+        try {
+          if ('caches' in window) {
+            caches.keys().then(function(names) {
+              names.forEach(function(name) { caches.delete(name); });
+            });
+          }
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.getRegistrations().then(function(regs) {
+              regs.forEach(function(r) { r.unregister(); });
+            });
+          }
+        } catch (_) {}
+
+        // 更新 UI 提示使用者手動點擊（附帶 Cache Buster）
+        function updateUI() {
+          var titleEl = document.getElementById('cardTitle');
+          var textEl = document.getElementById('cardDesc');
+          var btnEl = document.getElementById('homeBtn');
+          if (titleEl) titleEl.innerText = '快取衝突已自動修復';
+          if (textEl) textEl.innerText = '系統已為您清除本機過期快取。請點擊下方按鈕以全新版本直接進入學得快：';
+          if (btnEl) {
+            btnEl.href = base + '?v=' + Date.now();
+            btnEl.innerText = '🚀 立即進入學得快 (全新版本)';
+          }
+        }
+        if (document.readyState === 'loading') {
+          window.addEventListener('DOMContentLoaded', updateUI);
+        } else {
+          updateUI();
+        }
+        return; // 立即返回，絕不自動執行跳轉！
+      }
+
+      // 2. 正常自愈跳轉（使用 timestamp 破除舊版 index.html 磁碟快取）
+      sessionStorage.setItem('__sh_last_redirect__', String(now));
+      sessionStorage.setItem('__sh_redirect_count__', String(redirectCount + 1));
+
+      var target = base + '?clean=' + now;
+      try {
+        window.location.replace(target);
+      } catch (e) {
+        window.location.href = target;
+      }
+    })();
+  </script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+    }
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 16px;
+      padding: 36px 32px;
+      max-width: 480px;
+      width: 100%;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+    }
+    .icon { font-size: 54px; margin-bottom: 16px; }
+    h1 { font-size: 22px; font-weight: 800; margin-bottom: 12px; color: #38bdf8; }
+    p { font-size: 15px; color: #94a3b8; line-height: 1.6; margin-bottom: 24px; }
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 10px;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    .btn:hover { background: #1d4ed8; transform: translateY(-1px); }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">🎓</div>
+    <h1 id="cardTitle">108課綱國高中全科複習學得快</h1>
+    <p id="cardDesc">正在為您載入最新版學得快，若頁面未在數秒內自動載入，請直接點擊下方按鈕：</p>
+    <a id="homeBtn" class="btn" href="/learn5/">立即進入學得快</a>
+  </div>
+  <script>
+    (function () {
+      var base = window.location.pathname.startsWith('/learn5') ? '/learn5/' : '/';
+      var btn = document.getElementById('homeBtn');
+      if (btn) btn.href = base + '?v=' + Date.now();
+    })();
+  </script>
+</body>
+</html>
