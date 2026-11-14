@@ -1,0 +1,27 @@
+{
+  "name": "學得快 | 國高中108課綱全科題庫",
+  "short_name": "學得快",
+  "description": "專為國高中108課綱設計的全科免費線上題庫，支援國中會考與高中學測複習、重點筆記、智慧錯題本與全台每週排行榜。",
+  "id": "/learn5/",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f8f3eb",
+  "theme_color": "#f8f3eb",
+  "lang": "zh-Hant-TW",
+  "icons": [
+    {
+      "src": "./pwa-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./pwa-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
